@@ -48,7 +48,7 @@ o4 = tf.matmul(drop, w4) + b4
 r4 = tf.nn.relu(o4)
 
 cross_loss = tf.nn.softmax_cross_entropy_with_logits(logits=r4, labels=y)
-step = tf.train.AdamOptimizer(1e-3).minimize(cross_loss)
+step = tf.train.AdamOptimizer(1e-4).minimize(cross_loss)
 
 correction_pre = tf.equal(tf.arg_max(r4, 1), tf.arg_max(y, 1))
 correct = tf.reduce_mean(tf.cast(correction_pre, tf.float32))
