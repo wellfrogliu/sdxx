@@ -40,7 +40,7 @@ o3 = tf.matmul(x3,w3) + b3
 r3 = tf.nn.relu(o3)
 
 keep_prob = tf.placeholder(tf.float32)
-drop = tf.nn.dropout(r3, keep_prob)
+drop = tf.nn.dropout(r3, keep_prob)  #为了防止或减轻过拟合而使用的函数，它一般用在全连接层。
 
 w4 = weight_value([1024, 10])
 b4 = bias_value([10])
