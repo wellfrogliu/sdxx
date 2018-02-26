@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <IncludePath>D:\src\caffe\caffe-master\include;D:\src\caffe\NugetPackages\boost.1.59.0.0\lib\native\include;D:\src\caffe\NugetPackages\glog.0.3.3.0\build\native\include;D:\src\caffe\NugetPackages\gflags.2.1.2.1\build\native\include;D:\src\caffe\NugetPackages\protobuf-v120.2.6.1\build\native\include;D:\src\caffe\NugetPackages\OpenBLAS.0.2.14.1\lib\native\include;D:\src\caffe\caffe-master\include\caffe\layers;D:\src\caffe\NugetPackages\OpenCV.2.4.10\build\native\include;D:\src\caffe\NugetPackages\OpenCV.2.4.10\build\native\include\opencv;D:\src\caffe\NugetPackages\OpenCV.2.4.10\build\native\include\opencv2;D:\src\caffe\NugetPackages\LevelDB-vc120.1.2.0.0\build\native\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\src\caffe\NugetPackages\boost_date_time-vc120.1.59.0.0\lib\native\address-model-64\lib;D:\src\caffe\NugetPackages\boost_filesystem-vc120.1.59.0.0\lib\native\address-model-64\lib;D:\src\caffe\NugetPackages\boost_system-vc120.1.59.0.0\lib\native\address-model-64\lib;D:\src\caffe\caffe-master\Build\x64\Release;D:\src\caffe\NugetPackages\boost_thread-vc120.1.59.0.0\lib\native\address-model-64\lib;D:\src\caffe\NugetPackages\boost_chrono-vc120.1.59.0.0\lib\native\address-model-64\lib;D:\src\caffe\NugetPackages\protobuf-v120.2.6.1\build\native\lib\x64\v120\Release;D:\src\caffe\NugetPackages\OpenCV.2.4.10\build\native\lib\x64\v120\Release;D:\src\caffe\NugetPackages\glog.0.3.3.0\build\native\lib\x64\v120\Debug\dynamic;D:\src\caffe\NugetPackages\gflags.2.1.2.1\build\native\x64\v120\dynamic\Lib;D:\src\caffe\NugetPackages\hdf5-v120-complete.1.8.15.2\lib\native\lib\x64;D:\src\caffe\NugetPackages\OpenBLAS.0.2.14.1\lib\native\lib\x64;D:\src\caffe\NugetPackages\LevelDB-vc120.1.2.0.0\build\native\lib\x64\v120\Release;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <PreprocessorDefinitions>CPU_ONLY;_SCL_SECURE_NO_WARNINGS;USE_OPENCV;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcaffe.lib;libprotobuf.lib;opencv_highgui2410.lib;opencv_core2410.lib;opencv_imgproc2410.lib;libglog.lib;gflags.lib;libopenblas.dll.a;hdf5.lib;hdf5_hl.lib;LevelDb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
